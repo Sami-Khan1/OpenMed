@@ -2,7 +2,7 @@ import boto3
 import json
 
 def bedrock_handler(event, context):
-    bedrock = boto3.client(service_name='bedrock-runtime')
+    bedrock = boto3.client(service_name='bedrock-runtime', region_name='us-west-2')
     system_prompts = [{"text": "Be as helpful as possible with your given prompt."}]
     
     user_input = event.get('text', '')
