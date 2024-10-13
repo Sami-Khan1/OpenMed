@@ -35,12 +35,4 @@ def lambda_handler(event, context):
             'body': json.dumps({'error': str(e)})
         }
 
-if __name__ == "__main__":
-    # Simulate an event with sample text input
-    test_event = {
-        'text': 'Mental Illness--Uncontrollable laughter. Blurry Vision help.'
-    }
-    # Call the lambda_handler function directly
-    response = lambda_handler(test_event, None)
-    # Print the response
-    print(str(response))
+
