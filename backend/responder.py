@@ -14,6 +14,7 @@ def giveEvent (event, context):
         'text' : text
     }
     
+    return json.dump(result)
     #test
 '''if __name__ == '__main__':
     test_event = {
