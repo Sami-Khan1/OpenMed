@@ -38,9 +38,9 @@ def lambda_handler(event, context):
 if __name__ == "__main__":
     # Simulate an event with sample text input
     test_event = {
-        'text': '.'
+        'text': 'Mental Illness--Uncontrollable laughter. Blurry Vision help.'
     }
     # Call the lambda_handler function directly
     response = lambda_handler(test_event, None)
     # Print the response
-    print(response)
+    print(str(response))
