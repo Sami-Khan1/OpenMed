@@ -2,9 +2,6 @@ import boto3
 import json
 
 def bedrock_handler(event, context):
-    AWS_ACCESS_KEY_ID  = "AKIAZQ3DTB7NELOHTCMK"
-    AWS_SECRET_KEY_ID  = "f9vZqcpQB4X6MIGfIInxfp7IMlV1w05ySsXotwCm"
-    AWS_DEFAULT_REGION = "us-west-2"
     bedrock = boto3.client(service_name='bedrock-runtime')
     system_prompts = [{"text": "Be as helpful as possible with your given prompt."}]
     
