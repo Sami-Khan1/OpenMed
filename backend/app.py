@@ -4,7 +4,7 @@ from responder import giveEvent
 from bedrock import bedrock_handler
 from compMed import lambda_handler
 
-
+#test
 app = Flask(__name__)
 CORS(app)  # Enable CORS to allow cross-origin requests from your React frontend
 
